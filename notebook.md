@@ -29,7 +29,7 @@
 - Reviewing Type-A and Type-C chapters
 
 #############################################
-# Week04 - 01/28/2019 to 02/03/2019
+# Week04 - 01/04/2019 to 02/10/2019
 #############################################
 - Working on the section of AWS SageMaker
 - Raspberry PI 
