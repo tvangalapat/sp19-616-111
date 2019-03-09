@@ -43,4 +43,17 @@
 #############################################
 # “Week 7: Feb 22 - March 1”
 #############################################
- - Reviewing Map Reduce
+ - Updated AWS EMR content
+
+
+#############################################
+# “Week 7: Feb 22 - March 1”
+#############################################
+ - Updated AWS EMR content
+
+#############################################
+# “Week 7: March 04 - March 10”
+#############################################
+ - Project: Worked on cloudmesh cmd, initial work has done.
+ - docoptfile has been created
+ - Next step: draft object storage apis
