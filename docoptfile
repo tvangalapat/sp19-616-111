@@ -1,10 +1,12 @@
 """
           ::
             Usage:
-                  object [--object=SERVICE] put OBJECT BUCKET | KEY
-                  object [--object=SERVICE] get OBJECT BUCKET | KEY
-                  object [--object=SERVICE] getObjectOrKey BUCKET | KEY
-                  object [--object=SERVICE] listObjectOrKey BUCKET | KEY
+                  object [--object=SERVICE] put --object=OBJECT
+                  object [--object=SERVICE] put --key=KEY
+                  object [--object=SERVICE] get --object=OBJECT
+                  object [--object=SERVICE] get --key=KEY
+                  object [--object=SERVICE] list --object=OBJECT
+                  object [--object=SERVICE] list --key=KEY
                   object [--object=SERVICE] delete BUCKET | KEY              
                   object [--object=SERVICE] createObjectOrKey BUCKET | KEY
                   object [--object=SERVICE] uploadObjectOrKey BUCKET | KEY 
@@ -26,4 +28,9 @@
             Example:
               SET OBJECT=s3
               OBEJECT PUT BUCKET | KEY
+              
+              object put o.nn
+              object put k.nn
+              object put key NAME
+              
    """
