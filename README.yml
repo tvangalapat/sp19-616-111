@@ -15,4 +15,6 @@ chapter:
 project:
   - title: AWS VM Management with S3 and object Storage
     docopt url: https://github.com/cloudmesh-community/sp19-616-111/blob/master/docoptfile
-    cms command: https://github.com/cloudmesh-community/sp19-616-111/blob/master/project-code/awsvms3cmd.py
+    cms command: https://github.com/cloudmesh-community/sp19-616-111/edit/master/object.py
+    cms command: https://github.com/cloudmesh-community/sp19-616-111/edit/master/storage.py
+    code: https://github.com/cloudmesh-community/sp19-616-111/tree/master/project-code
