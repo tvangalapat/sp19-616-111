@@ -9,9 +9,12 @@ owner:
   semester: sp19
   profile: "https://github.com/tvangalapat"
 section:
-  - https://github.com/cloudmesh-community/book/blob/master/chapters/mapreduce/amazon-emr-1.md
+  - title: AWS SageMaker
+    url: 
+    issue: https://github.com/cloudmesh-community/book/issues/275
 chapter:
-  -https://github.com/cloudmesh-community/book/blob/master/chapters/mapreduce/amazon-emr-1.md
+  - title: AWS Elastic MapReduce
+    url: https://github.com/cloudmesh-community/book/blob/master/chapters/mapreduce/amazon-emr-1.md
 project:
   - title: AWS VM Management with S3 and object Storage
     docopturl: https://github.com/cloudmesh-community/sp19-616-111/blob/master/docoptfile
