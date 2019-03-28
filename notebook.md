@@ -46,8 +46,30 @@
  - Updated AWS EMR content
 
 #############################################
-# “Week 7: March 04 - March 10”
+# “Week 8: March 04 - March 10”
 #############################################
  - Project: Worked on cloudmesh cmd, initial work has done.
  - docoptfile has been created
  - Next step: draft object storage apis
+
+
+#############################################
+# “Week 9: March 11 - March 17”
+#############################################
+ - Project: Worked on cloudmesh cmd, initial work has done.
+ - Chapter: Added EMR content
+ 
+ 
+#############################################
+# “Week 10: March 18 - March 24”
+#############################################
+ - Project: Worked on cloudmesh cmd, initial work has done.
+ - section: EMR
+ 
+#############################################
+# “Week 11: March 25 - March 31”
+#############################################
+ - Project: Worked on cloudmesh cmd, initial work has done.
+ - Section: AWS SageMaker
+ - Chapter: EMR
+ 
