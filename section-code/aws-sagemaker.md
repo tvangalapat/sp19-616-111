@@ -7,7 +7,8 @@ Amazon SageMaker provides following advantages:
 - An integrated Jupyter authoring notebook instance for easy access to your data sources for exploration and analysis, so you don't have to manage servers
 - Common machine learning algorithms that are optimized to run efficiently against extremely large data in a distributed environment
 - Native support for bring-your-own-algorithms and frameworks, Amazon SageMaker offers flexible distributed training options that adjust to your specific workflows
-- Deploy a model into a secure and scalable environment by launching it with a one click from the Amazon SageMaker console. - - Training and hosting are billed by minutes of usage, with no minimum fees and no upfront commitments.
+- Deploy a model into a secure and scalable environment by launching it with a one click from the Amazon SageMaker console
+- Training and hosting are billed by minutes of usage, with no minimum fees and no upfront commitments.
 
 ## How Machine Learning with Amazon SageMaker?
 
