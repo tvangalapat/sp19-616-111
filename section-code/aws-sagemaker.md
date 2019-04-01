@@ -15,7 +15,7 @@ Amazon SageMaker provides following advantages:
 - Training and hosting are billed by minutes of usage, with 
   no minimum fees and no upfront commitments.
 
-## Machine Learning with Amazon SageMaker :o: make statement not question, make gramatically correct
+## Machine Learning with Amazon SageMaker
 
 We explained a typical machine learning workflow and summarizes how you accomplish those tasks with Amazon SageMaker.
 
