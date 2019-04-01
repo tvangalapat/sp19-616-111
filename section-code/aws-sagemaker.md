@@ -15,9 +15,9 @@ Amazon SageMaker provides following advantages:
 - Training and hosting are billed by minutes of usage, with 
   no minimum fees and no upfront commitments.
 
-## How Machine Learning with Amazon SageMaker?
+## How Machine Learning with Amazon SageMaker? :o: make statement not question, make gramatically correct
 
-In this section, we described a typical machine learning workflow and summarizes how you accomplish those tasks with Amazon SageMaker.
+A typical machine learning workflow and summarizes how you accomplish those tasks with Amazon SageMaker.
 
 In general, machine learning is all about you "teach" a computer to make predictions, or inferences. As a first step, you use an algorithm and example data to train a model. Then you integrate your model into your application to generate inferences in real time and at scale. In a production environment, a model typically learns from millions of example data items and produces inferences in hundreds to less than 20 milliseconds.
 
