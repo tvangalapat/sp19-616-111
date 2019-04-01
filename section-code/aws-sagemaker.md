@@ -21,6 +21,7 @@ We descrip a typical machine learning workflow and summarizes how you accomplish
 
 In general, machine learning is all about you *teach* a computer to make predictions, or inferences. As a first step, you use an algorithm and example data to train a model. Then you integrate your model into your application to generate inferences in real time and at scale. In a production environment, a model typically learns from millions of example data items and produces inferences in hundreds to less than 20 milliseconds.
 
-The following diagram illustrates the typical workflow for creating a machine learning model:
+The following :o: use proper image notation with caption and citation as discussed in notation.md 
+diagram illustrates the typical workflow for creating a machine learning model:
 
 ![AWS SageMaker](images/machine_learning_workflow.png)
