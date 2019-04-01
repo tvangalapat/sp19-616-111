@@ -1,14 +1,19 @@
 # AWS SageMaker :o: sp19-616-111 ✋
 
-<p> Amazon SageMaker </p> is a fully managed machine learning service. Using Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment. 
+Amazon SageMaker is a fully managed machine learning service. Using Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment. 
 
 Amazon SageMaker provides following advantages:
 
-- An integrated Jupyter authoring notebook instance for easy access to your data sources for exploration and analysis, so you don't have to manage servers
-- Common machine learning algorithms that are optimized to run efficiently against extremely large data in a distributed environment
-- Native support for bring-your-own-algorithms and frameworks, Amazon SageMaker offers flexible distributed training options that adjust to your specific workflows
-- Deploy a model into a secure and scalable environment by launching it with a one click from the Amazon SageMaker console
-- Training and hosting are billed by minutes of usage, with no minimum fees and no upfront commitments.
+- An integrated Jupyter authoring notebook instance for easy access to your data sources 
+  for exploration and analysis, so you do not have to manage servers
+- Common machine learning algorithms that are optimized to run efficiently against 
+  extremely large data in a distributed environment
+- Native support for bring-your-own-algorithms and frameworks, Amazon SageMaker 
+  offers flexible distributed training options that adjust to your specific workflows
+- Deploy a model into a secure and scalable environment by launching it with a one 
+  click from the Amazon SageMaker console
+- Training and hosting are billed by minutes of usage, with 
+  no minimum fees and no upfront commitments.
 
 ## How Machine Learning with Amazon SageMaker?
 
