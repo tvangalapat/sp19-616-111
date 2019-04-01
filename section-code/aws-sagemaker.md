@@ -18,4 +18,4 @@ In general, machine learning is all about you "teach" a computer to make predict
 
 The following diagram illustrates the typical workflow for creating a machine learning model:
 
-![AWS SageMaker](images/machine_learning_workflow.png){#fig:machinelearning-workflow}
+![AWS SageMaker](images/machine_learning_workflow.png)
