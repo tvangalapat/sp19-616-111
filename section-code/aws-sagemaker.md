@@ -17,9 +17,9 @@ Amazon SageMaker provides following advantages:
 
 ## How Machine Learning with Amazon SageMaker? :o: make statement not question, make gramatically correct
 
-A typical machine learning workflow and summarizes how you accomplish those tasks with Amazon SageMaker.
+We descrip a typical machine learning workflow and summarizes how you accomplish those tasks with Amazon SageMaker.
 
-In general, machine learning is all about you "teach" a computer to make predictions, or inferences. As a first step, you use an algorithm and example data to train a model. Then you integrate your model into your application to generate inferences in real time and at scale. In a production environment, a model typically learns from millions of example data items and produces inferences in hundreds to less than 20 milliseconds.
+In general, machine learning is all about you *teach* a computer to make predictions, or inferences. As a first step, you use an algorithm and example data to train a model. Then you integrate your model into your application to generate inferences in real time and at scale. In a production environment, a model typically learns from millions of example data items and produces inferences in hundreds to less than 20 milliseconds.
 
 The following diagram illustrates the typical workflow for creating a machine learning model:
 
