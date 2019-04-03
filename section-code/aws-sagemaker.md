@@ -91,4 +91,59 @@ If you're familiar with using sample notebooks, open and run the following examp
 
 2. kmeans_mnist_lowlevel.ipynb
 
-connection.run_instances('<ami-id>')
+### Create a Jupyter Notebook and Initialize Variables
+
+Now, create a Jupyter notebook in your Amazon SageMaker notebook instance and initialize variables.
+
+To create a Jupyter notebook ,sign in to the Amazon SageMaker console at https://console.aws.amazon.com/sagemaker/.
+
+Open the notebook instance, by choosing Open next to its name. The Jupyter notebook server page appears:
+
+![AWS SageMaker](images/sagemaker-jupyter-home-page-ex.png)
+
+* To create a notebook, in the Files tab, choose New, and conda_python3. This pre-installed environment includes the default Anaconda installation and Python 3.
+
+* In the Jupyter notebook, under File, choose Save as, and name the notebook.
+
+Copy the following Python code and paste it into your notebook. Add the name of the S3 bucket that you created in Set Up Amazon SageMaker, and run the code. The get_execution_role function retrieves the IAM role you created when you created your notebook instance.
+
+
+```python
+from sagemaker import get_execution_role
+role = get_execution_role()
+bucket = 'bucket-name' # Use the name of your s3 bucket here
+```
+
+### Download, Explore, and Transform the Training Data
+
+Now download the MNIST dataset to your notebook instance. Then review the data, transform it, and upload it to your S3 bucket.
+
+You transform the data by changing its format from numpy.array to RecordIO. The RecordIO format is more efficient for the algorithms provided by Amazon SageMaker. 
+
+#### MNIST dataset
+
+To download the MNIST dataset, copy and paste the following code into the notebook and run it:
+
+%%time
+import pickle, gzip, numpy, urllib.request, json
+``` python
+# Load the dataset
+urllib.request.urlretrieve("http://deeplearning.net/data/mnist/mnist.pkl.gz", "mnist.pkl.gz")
+with gzip.open('mnist.pkl.gz', 'rb') as f:
+    train_set, valid_set, test_set = pickle.load(f, encoding='latin1')
+```
+The above code does the following:
+
+* Downloads the MNIST dataset (mnist.pkl.gz) from the deeplearning.net website to your Amazon SageMaker notebook instance.
+
+* Unzips the file and reads the following three datasets into the notebook's memory:
+
+- train_set—You use these images of handwritten numbers to train a model.
+
+- valid_set—After you train the model, you validate it using the images in this dataset.
+
+- test_set—You don't use this dataset in this exercise.
+
+
+
+
