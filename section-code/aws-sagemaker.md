@@ -144,6 +144,29 @@ The above code does the following:
 
 - test_set—You don't use this dataset in this exercise.
 
+#### Training Dataset
+
+Typically, you explore training data to determine what you need to clean up and which transformations to apply to improve model training. For this exercise, you don't need to clean up the MNIST dataset. Simply display one of the images in the train_set dataset.
+
+```
+%matplotlib inline
+import matplotlib.pyplot as plt
+plt.rcParams["figure.figsize"] = (2,10)
+
+
+def show_digit(img, caption='', subplot=None):
+    if subplot == None:
+        _, (subplot) = plt.subplots(1,1)
+    imgr = img.reshape((28,28))
+    subplot.axis('off')
+    subplot.imshow(imgr, cmap='gray')
+    plt.title(caption)
+
+show_digit(train_set[0][30], 'This is a {}'.format(train_set[1][30]))
+
+```
+
+The code uses the matplotlib library to get and display the 31st image from the training dataset.
 
 
 
