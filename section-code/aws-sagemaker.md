@@ -90,3 +90,5 @@ If you're familiar with using sample notebooks, open and run the following examp
 1. kmeans_mnist.ipynb
 
 2. kmeans_mnist_lowlevel.ipynb
+
+connection.run_instances('<ami-id>')
