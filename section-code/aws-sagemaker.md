@@ -64,3 +64,29 @@ In this section, we will explain on how you create your first Amazon SageMaker n
 You use this notebook instance for all kind of machine learning models that are available as part of AWS SageMaker notebook instance or customer machine learning libraries.
 
 ### Train a Model with Amazon SageMaker
+
+To train a model in Amazon SageMakar, you can Download the MNIST dataset to your Amazon SageMaker notebook instance, then review the data and preprocess it. For efficient training, you convert the dataset from the numpy.array format to the RecordIO protobuf format. A numpy.array is an n-dimensional array object that the NumPy scientific computing library uses. RecordIO protobuf is a binary data format that the Amazon SageMaker K-Means algorithm expects as input.
+
+- Start an Amazon SageMaker training job.
+
+- Deploy the model in Amazon SageMaker.
+
+- Validate the model by sending inference requests to the model's endpoint. You send images of handwritten, single-digit numbers. The model returns the number of the cluster (0 through 9) that the images belong to.
+
+Important to note that, for model training, deployment, and validation, you can use either of the following:
+
+- The high-level Python library provided by Amazon SageMaker
+
+- The AWS SDK for Python (Boto)
+
+The high-level library abstracts several implementation details, and is easy to use. This exercise provides separate code examples using both libraries. If you're a first-time Amazon SageMaker user, we recommend that you use the high-level Python library.
+
+Basically, there are two ways to practice this exercise:
+
+Follow the steps to create, deploy, and validate the model. You create a Jupyter notebook in your Amazon SageMaker notebook instance, and copy code, paste it into the notebook, and run it.
+
+If you're familiar with using sample notebooks, open and run the following example notebooks that Amazon SageMaker provides in the SageMaker Python SDK section of the SageMaker Examples tab of your notebook instance:
+
+1. kmeans_mnist.ipynb
+
+2. kmeans_mnist_lowlevel.ipynb
