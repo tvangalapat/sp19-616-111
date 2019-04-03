@@ -73,3 +73,10 @@
  - Section: AWS SageMaker
  - Chapter: EMR
  
+ #############################################
+# “Week 11: April 1 - April 7”
+#############################################
+ - Project: Committed cloudmesh cmd, object storage
+ - Section: Completed AWS SageMaker and waiting for instructor comments
+ - Chapter: Contrubuted to EMR
+ 
