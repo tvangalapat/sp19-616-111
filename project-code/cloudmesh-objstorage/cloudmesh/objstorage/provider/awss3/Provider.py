@@ -10,8 +10,7 @@ from apiclient.http import MediaIoBaseDownload
 from cloudmesh.management.configuration.config import Config
 from cloudmesh.common.util import path_expand
 from cloudmesh.objstorage.ObjectStorageABC import ObjectStorageABC
-import magic
-
+# from libmagic import magic
 #
 # BUG: des not follow named arguments in abc class
 #

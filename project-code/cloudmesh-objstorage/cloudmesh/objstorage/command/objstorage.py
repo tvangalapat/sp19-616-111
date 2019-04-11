@@ -4,7 +4,7 @@ from cloudmesh.shell.command import PluginCommand
 from cloudmesh.objstorage.api.manager import Manager
 from cloudmesh.common.console import Console
 from cloudmesh.common.util import path_expand
-from cloudmesh.objstorage.provider.Provider import Provider
+from cloudmesh.objstorage.provider.awss3.Provider import Provider
 from pprint import pprint
 
 
@@ -33,6 +33,7 @@ class ObjstorageCommand(PluginCommand):
               DIRECTORY     DIRECTORY refers to a folder or bucket on the cloud service for ex: awss3
 
           Options:
+              -h, --help
               --objstorage=SERVICE  specify the cloud service name like aws-s3
 
           Description:

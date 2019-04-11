@@ -116,7 +116,7 @@ dist: twine clean
 upload_test: dist
 #	python setup.py	 sdist bdist bdist_wheel upload -r pypitest
 	rm dist/*.zip
-	twine upload --repository pypitest dist/cloudmesh.objstorage-*.whl	dist/cloudmesh.objstorage-*.tar.gz
+	twine upload --repository pypitest dist/cloudmesh-objstorage-*.whl	dist/cloudmesh-objstorage-*.tar.gz
 
 log:
 	gitchangelog | fgrep -v ":dev:" | fgrep -v ":new:" > ChangeLog
