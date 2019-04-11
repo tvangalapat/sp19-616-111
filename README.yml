@@ -8,16 +8,15 @@ owner:
   community: e616
   semester: sp19
   profile: "https://github.com/tvangalapat"
-section:
+section: [COMPLETED]
   - title: AWS SageMaker
     url: https://github.com/cloudmesh-community/sp19-616-111/blob/master/section-code/aws-sagemaker.md
     issue: https://github.com/cloudmesh-community/book/issues/275
-chapter:
+chapter:[COMPLETED]
   - title: AWS Elastic MapReduce
     url: https://github.com/cloudmesh-community/book/blob/master/chapters/mapreduce/amazon-emr-1.md
-project:
+project:[WORK-IN-PROGRESS]
   - title: AWS VM Management with S3 and object Storage
     docopturl: https://github.com/cloudmesh-community/sp19-616-111/blob/master/docoptfile
-    cmscommand: https://github.com/cloudmesh-community/sp19-616-111/edit/master/object.py
-    cmscommand: https://github.com/cloudmesh-community/sp19-616-111/edit/master/storage.py
+    cmscommand: https://github.com/cloudmesh-community/sp19-616-111/tree/master/project-code/cloudmesh.objstorage
     code: https://github.com/cloudmesh-community/sp19-616-111/tree/master/project-code
