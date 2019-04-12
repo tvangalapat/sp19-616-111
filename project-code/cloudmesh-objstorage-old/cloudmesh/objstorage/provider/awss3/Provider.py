@@ -17,26 +17,6 @@ from cloudmesh.objstorage.ObjectStorageABC import ObjectStorageABC
 class Provider(ObjectStorageABC):
 
 
-    def __init__(self, service=None, config="~/.cloudmesh/cloudmesh4.yaml"):
-        super().__init__(service=service, config=config)
-        ACCESS_KEY_ID: "AKIAYBVIJCLU3JP77SVY"
-        SECRET_ACCESS_KEY: "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"
-        self.container_name = self.credentials['objstorage']
-        # self.s3_resource = boto3.resource('s3',
-        #                                   aws_access_key_id=self.credentials[
-        #                                       'ACCESS_KEY_ID'],
-        #                                   aws_secret_access_key=
-        #                                   self.credentials['SECRET_ACCESS_KEY'],
-        #                                   #region_name=self.credentials['region']
-        #                                   )
-        self.s3_client = boto3.client('s3',
-                                      aws_access_key_id=ACCESS_KEY_ID,
-                                      aws_secret_access_key=SECRET_ACCESS_KEY
-                                      #region_name=self.credentials['region']
-                                      )
-        self.directory_marker_file_name = 'marker.txt'
-        self.storage_dict = {}
-
 
     def get(self, bucket_name, object_name):
 
@@ -48,9 +28,9 @@ class Provider(ObjectStorageABC):
         """
 
         # Retrieve the object
-        # s3 = boto3.client('s3')
+        s3 = boto3.client('s3')
         try:
-            response = self.s3_client.get_object(Bucket=bucket_name, Key=object_name)
+            response = s3.get_object(Bucket=bucket_name, Key=object_name)
         except ClientError as e:
             # AllAccessDisabled error == bucket or object not found
             logging.error(e)
@@ -87,9 +67,9 @@ class Provider(ObjectStorageABC):
             return False
 
         # Put the object
-        # s3 = boto3.client('s3')
+        s3 = boto3.client('s3')
         try:
-            self.s3_client.put_object(Bucket=dest_bucket_name, Key=dest_object_name, Body=object_data)
+            s3.put_object(Bucket=dest_bucket_name, Key=dest_object_name, Body=object_data)
         except ClientError as e:
             # AllAccessDisabled error == bucket not found
             # NoSuchKey or InvalidRequest error == (dest bucket/obj == src bucket/obj)
@@ -118,9 +98,9 @@ class Provider(ObjectStorageABC):
             dest_object_name = src_object_name
 
         # Copy the object
-        # s3 = boto3.client('s3')
+        s3 = boto3.client('s3')
         try:
-            self.s3_client.copy_object(CopySource=copy_source, Bucket=dest_bucket_name,
+            s3.copy_object(CopySource=copy_source, Bucket=dest_bucket_name,
                            Key=dest_object_name)
         except ClientError as e:
             logging.error(e)
@@ -135,9 +115,9 @@ class Provider(ObjectStorageABC):
         """
 
         # Retrieve the list of bucket objects
-        # s3 = boto3.client('s3')
+        s3 = boto3.client('s3')
         try:
-            response = self.s3_client.list_objects_v2(Bucket=bucket_name)
+            response = s3.list_objects_v2(Bucket=bucket_name)
         except ClientError as e:
             # AllAccessDisabled error == bucket not found
             logging.error(e)
@@ -156,9 +136,9 @@ class Provider(ObjectStorageABC):
         objlist = [{'Key': obj} for obj in object_names]
 
         # Delete the objects
-        # s3 = boto3.client('s3')
+        s3 = boto3.client('s3')
         try:
-            self.s3_client.delete_objects(Bucket=bucket_name, Delete={'Objects': objlist})
+            s3.delete_objects(Bucket=bucket_name, Delete={'Objects': objlist})
         except ClientError as e:
             logging.error(e)
             return False
