@@ -29,13 +29,13 @@
 - Reviewing Type-A and Type-C chapters
 
 #############################################
-# Week04 - 01/04/2019 to 02/10/2019
+# Week05 - 01/04/2019 to 02/10/2019
 #############################################
 - Working on the section of AWS SageMaker
 - Raspberry PI 
 
 #############################################
-# “Week 5 and 6: Feb 8 - 22”
+# “Week06 and 6: Feb 8 - 22”
 #############################################
 
 - Review of Chapters completed
@@ -74,9 +74,37 @@
  - Chapter: EMR
  
  #############################################
-# “Week 11: April 1 - April 7”
+# “Week 12: April 1 - April 7”
 #############################################
  - Project: Committed cloudmesh cmd, object storage
  - Section: Completed AWS SageMaker and waiting for instructor comments
  - Chapter: Contrubuted to EMR
  
+ #############################################
+# “Week 13: April 8 - April 14”
+#############################################
+ - Project: Committed cloudmesh cmd, object storage
+ - Section: Completed AWS SageMaker and waiting for instructor comments
+ - Chapter: Completed to EMR
+
+ #############################################
+# “Week 14: April 15 - April 21”
+#############################################
+ - Project: Committed cloudmesh cmd, object storage
+ - Section: Completed AWS SageMaker and waiting for instructor comments
+ - Chapter: Completed EMR
+ 
+ 
+  #############################################
+# “Week 15: April 22 - April 28”
+#############################################
+ - Project: Working on integration testing with cloudmesh storage per professor
+ - Section: Completed AWS SageMaker and waiting for instructor comments
+ - Chapter: Completed EMR
+ 
+   #############################################
+# “Week 16: April 29 - May 03”
+#############################################
+ - Project: Working on integration testing with cloudmesh storage and object
+ - Section: Completed AWS SageMaker and waiting for instructor comments
+ - Chapter: Contrubuted to EMR
